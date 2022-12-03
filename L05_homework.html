@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L05 Homework</title>
+    <style>
+        * {
+            width: 100vw;
+            margin: auto;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .from {
+            font-size: 3rem;
+            text-transform: capitalize;
+            border: gray solid medium;
+            padding: 0.5rem;
+            width: fit-content;
+            opacity: 0.5;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0rem 1rem 0rem 1rem;
+            margin-top: 1rem;
+            transition-duration: 0.5s;
+        }
+
+        .from:hover {
+            background-color: tomato;
+            color: white;
+            border-top-right-radius: 30%;
+        }
+
+
+        .ball {
+            width: 2rem;
+            height: 1.5rem;
+            margin-bottom: -1rem;
+            animation-name: funny;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes funny {
+            0% {
+                background-color: yellowgreen;
+                transform: translate(-16rem, 0rem);
+                width: 0.5rem;
+            }
+
+            50% {
+                background-color: brown;
+                width: 18.5rem;
+            }
+
+            100% {
+                background-color: burlywood;
+                transform: translate(16rem, 0rem);
+            }
+        }
+
+        .welcome {
+            position: absolute;
+            color: white;
+            text-align: center;
+            margin-top: -0.5rem;
+            z-index: 1;
+            font-size: 1.3rem;
+            font-weight: bolder;
+            font-family: monospace;
+        }
+
+        .brownie {
+            margin-top: 1.5rem;
+            width: 75%;
+            transition-duration: 0.5s;
+            border: burlywood solid thick;
+        }
+
+        .brownie:hover {
+            border-radius: 50%;
+            transform: rotateX(30deg);
+            transform: rotateY(45deg);
+            background-color: darksalmon;
+            padding: 0.8rem;
+            opacity: 0.3;
+            border: black solid thick;
+        }
+
+
+        .recipe {
+            font-size: 1.3em;
+            opacity: 0.8;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+        }
+
+        .recipe:hover {
+            color: white;
+            font-family: cursive;
+            font-size: 1.4em;
+            background-image: linear-gradient(to right, turquoise, darkorange);
+            width: fit-content;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+
+        .more {
+            text-align: left;
+            text-indent: 2rem;
+            margin: 1rem;
+            font-size: 1.3em;
+            font-weight: bolder;
+            transition-duration: 0.5s;
+            transition-timing-function: linear;
+        }
+
+        .more:hover {
+            background-image: linear-gradient(to right, tomato, whitesmoke);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: 1.5em;
+            width: 55%;
+            margin-left: 4rem;
+        }
+
+        figure img {
+            width: 25%;
+            height: fit-content;
+            float: left;
+            padding-bottom: 1rem;
+            padding-right: 0.5rem;
+            margin-left: 2rem;
+            transition-duration: 0.5s;
+            border-radius: 40%;
+        }
+
+        figure img:hover {
+            border-left: tomato solid thick;
+            transform: rotateX(30deg);
+            transform: rotateY(10deg);
+            border-radius: 5% 15% 15% 5%;
+            background-color: turquoise;
+            padding-bottom: 0em;
+            padding-right: 10rem;
+        }
+
+        span {
+            color: red;
+        }
+
+        footer p {
+            padding: 2rem 0rem 2rem 0rem;
+            background-image: linear-gradient(to right, turquoise, violet);
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 2rem;
+            font-family: monospace;
+        }
+
+        div a {
+            width: 100%;
+            margin: auto;
+            float: right;
+            padding: 1rem;
+            transition-duration: 2s;
+        }
+
+        div a:hover {
+            color: red;
+            font-weight: bolder;
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="from">from <span>a</span> to <span>z</span>ucchini</p>
+    <div class="ball"></div>
+    <p class="welcome">WELCOME !</p>
+    <img src="images/brownie.jpg" alt="" class="brownie">
+    <div class="recipe">This recipe for individual chocolate cake is so simple and so delectable!</div>
+    <div class="more">More Recipes: </div>
+    <div>
+        <figure>
+            <img src="images/lemon-posset.jpg" alt="">
+            <img src="images/roasted-brussel-sprouts.jpg" alt="">
+            <img src="images/zucchini-cake.jpg" alt="">
+        </figure>
+    </div>
+    <div><a href="L05_moutain.html" target="_blank">Looking for something ?</a></div>
+</body>
+
+<hr>
+<footer>
+    <p>Created By &copy Tran Thien Nhan</p>
+</footer>
+
+</html>
